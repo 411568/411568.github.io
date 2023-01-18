@@ -1,6 +1,8 @@
+---
 layout: page
 title: "About me"
 permalink: /about_me
+---
 
 My name is Krzysztof Sikora, I study electronics engineering at AGH, Cracow. 
 
