@@ -4,6 +4,3 @@
 
 layout: home
 ---
-
-AAA
-
