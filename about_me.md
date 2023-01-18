@@ -2,8 +2,8 @@ layout: page
 title: "About me"
 permalink: /about_me
 
-Test 
+My name is Krzysztof Sikora, I study electronics engineering at AGH, Cracow. 
 
-Test
+e-mail: krzysieksikora717@gmail.com
+phone number: 603214777
 
-test
