@@ -2,7 +2,12 @@
 layout: splash
 permalink: /projects/
 title: "My projects"
+header: 
+    overlay_color: '#a3a3a3'
 ---
+
+
+
 
 # My projects
 

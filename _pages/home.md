@@ -4,13 +4,20 @@ permalink: /
 hidden: true
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/unsplash-image-1.jpg
+  overlay_image: /assets/images/header_main_page.jpg
 excerpt: >
-  My personal blog<br />
+  Electronics engineering blog<br />
 author_profile: true
 ---
 
-Welcome to my personal website! In here I post all my electronics projects, tutorials, etc.
+
+
+
+# Welcome to my website!
+My name is Krzysztof Sikora and on this website I post the documentation to all of my projects.
+
+You can find them by clicking the link at the top of this page.
+
 
 
 

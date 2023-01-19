@@ -2,7 +2,13 @@
 layout: splash
 permalink: /about/
 title: "About me"
+header: 
+    overlay_color: '#a3a3a3'
 ---
+
+
+
+# About me
 
 My name is Krzysztof Sikora and I study electronics engineering at AGH, Cracow, Poland. 
 
