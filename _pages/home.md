@@ -1,5 +1,6 @@
 ---
 layout: single
+classes: wide
 permalink: /
 hidden: true
 header:
@@ -13,17 +14,17 @@ author_profile: true
 
 
 
-## About me
+# About me
 
 I'm Krzysztof Sikora, currently 20 years old. I study electronics engineering at AGH university of science and technology in Cracow, Poland.
 My main interest lies in the design of power electronics, switching converters and low voltage power delivery for integrated circuits.
 
-### My job experience
+## My job experience
 - Webiste design for an accounting office.
 - Electrician working with specialized vehicles.
 - IT office assistant.
 
-### Courses and certificates
+## Courses and certificates
 - UAV pilot - A1-A3 license
 - C1 (Cambridge English) exam certificate
 - CERN winter campus IT Course

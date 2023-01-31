@@ -1,7 +1,9 @@
 ---
 layout: single
-permalink: /projects/lab_power_supply/
-title: "Laboratory power supply"
+permalink: /projects/template/
+title: "Project template"
+
+#site header
 header:
   overlay_color: "#5e616c"
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
@@ -12,4 +14,15 @@ toc_label: "Table of contents"
 ---
 
 
-TEST
+# Project description
+
+# Design walkthrough
+
+## Schematic
+
+## PCB Design
+
+# Resources
+
+# Parts list 
+
