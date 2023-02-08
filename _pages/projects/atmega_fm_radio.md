@@ -14,6 +14,8 @@ toc_label: "Table of contents"
 
 This project is a revision of one of my old designs, created a long long time ago when atmel atmega chips where still dirty cheap.
 
+You can find all the project files on my github: [github project](https://github.com/411568/Atmega8_FM_radio)
+
 It contains two seperate boards: 
  - main_radio_board - this one contains an Atmega8 microcontroller, TEA5767 FM radio module, PAM8302 amplifier module and power connector. 
  - display_and_controls_board - this one is specificly designed to fit in an old Unitra radio case, it has LEDs used as radio frequency indicators, rotary encoder for changing the frequency, potentiometer for volume and some additional buttons.
@@ -29,7 +31,7 @@ The schematic and PCB were both designed using KiCAD 6.0
 ![schematic kicad](/assets/images/atmega_fm_radio/schematic_1.png)
 
 ## PCB design
-![PCB kicad](main_radio_board/pcb_image_1.png)
+![PCB kicad](/assets/images/atmega_fm_radio/pcb_image_1.png)
 ![3d view](/assets/images/atmega_fm_radio/pcb_image_2.png)
 
 
