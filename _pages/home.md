@@ -18,6 +18,7 @@ author_profile: true
 
 I'm Krzysztof Sikora, currently 20 years old. I study electronics engineering at AGH university of science and technology in Cracow, Poland.
 My main interest lies in the design of power electronics, switching converters and low voltage power delivery for integrated circuits.
+I am currently a part of AGH KNE - electronics club, for which I have so far designed a few simple PCB.
 
 ## My job experience
 - Webiste design for an accounting office.
