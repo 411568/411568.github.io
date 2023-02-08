@@ -26,15 +26,15 @@ and comes back to the PAM8302 D-class amplifier module. I chose it because it wo
 
 ## Schematic
 The schematic and PCB were both designed using KiCAD 6.0
-![schematic kicad](main_radio_board/schematic_1.png)
+![schematic kicad](/assets/images/atmega_fm_radio/schematic_1.png)
 
 ## PCB design
 ![PCB kicad](main_radio_board/pcb_image_1.png)
-![3d view](main_radio_board/pcb_image_2.png)
+![3d view](/assets/images/atmega_fm_radio/pcb_image_2.png)
 
 
 ## Connector pins
-![pcb view with pinout](main_radio_board/pcb_pinout.png)
+![pcb view with pinout](/assets/images/atmega_fm_radio/pcb_pinout.png)
 
 In the image above you can see the 9V DC input jack location, the speaker output connector and two pin headers (IDC connectors).
 
