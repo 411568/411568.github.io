@@ -99,4 +99,5 @@ Because of that the design may look a bit peculiar and I decided not to make a B
 
 # Author
 Krzysztof Sikora
+
 Cracow, 01.2023
