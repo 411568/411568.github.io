@@ -20,13 +20,13 @@ with the maximum continous current about 20mA, which depends on the exact parts 
 
 ## Schematic
 The schematic and PCB were both designed using KiCAD 6.0
-![schematic kicad](/assets/images/nixie_power_supply/schematic.png)
+![Schematic kicad](/assets/images/nixie_power_supply/schematic.PNG)
 
 ## PCB design
-![PCB kicad](/assets/images/nixie_power_supply/pcb.png)
+![PCB kicad](/assets/images/nixie_power_supply/pcb.PNG)
 
 
-![3d view](/assets/images/nixie_power_supply/3dview.png)
+![3d view](/assets/images/nixie_power_supply/3dview.PNG)
 
 ## Parts used
 * 220uF 16V electrolityc capacitor
