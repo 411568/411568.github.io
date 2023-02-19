@@ -87,14 +87,14 @@ Because of that the design may look a bit peculiar and I decided not to make a B
 This board is used as my front panel for controls and displaying the current frequency etc.
 
 ## Schematic
-![schematic kicad](/assets/images/atmega_fm_radio/schematic_2.png)
+![schematic kicad](/assets/images/atmega_fm_radio/schematic_2.PNG)
 
 
 ## PCB design
-![3d view](/assets/images/atmega_fm_radio/pcb_image_3.png)
+![3d view](/assets/images/atmega_fm_radio/pcb_image_3.PNG)
 
 
-![3d view](/assets/images/atmega_fm_radio/3d_view_2.png)
+![3d view](/assets/images/atmega_fm_radio/3d_view_2.PNG)
 
 
 ## Parts used
