@@ -84,17 +84,29 @@ Because of that the design may look a bit peculiar and I decided not to make a B
 
 
 # Front panel board
-
+This board is used as my front panel for controls and displaying the current frequency etc.
 
 ## Schematic
+![schematic kicad](/assets/images/atmega_fm_radio/schematic_2.png)
+
 
 ## PCB design
+![3d view](/assets/images/atmega_fm_radio/pcb_image_3.png)
+
+
+![3d view](/assets/images/atmega_fm_radio/3d_view_2.png)
+
 
 ## Parts used
-
-
-# Assembled project
-
+* LTV847 optocoupler
+* TLC5916IN LED driver
+* 3x 1kOhm resistor
+* 1.5kOhm resistor
+* 5x tact switch
+* logarithmic potentiometer for audio control
+* rotary encoder
+* 2x IDC connector
+* a lot of LEDs (red)
 
 
 # Author
