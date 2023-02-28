@@ -67,7 +67,7 @@ J3 connector pinout:
 
 
 ## Atmega8 code
-
+(work in progress...)
 
 ## Parts used
 As it was just a revision of an older schematic, I did not bother to try and redesign it with newer uC etc. I just used the parts from the previous version (soldered onto a prototype board) or those I had lying around. 
