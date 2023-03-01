@@ -18,6 +18,7 @@ This power supply was designed for my friend, who needed a cheap high voltage PS
 Input voltage is in the range of 9V to about 20V but I used a 12V power supply. The output is adjustable from 140V to over 200V,
 with the maximum continous current about 20mA, which depends on the exact parts used (I used a different MOSFET and diode that I already had).
 It has been tested with IN-12B and IN-1 tubes so far and seems to work flawlessly.
+You can find all the project files on my github: [github project](https://github.com/411568/)
 
 ## Schematic
 The schematic and PCB were both designed using KiCAD 6.0

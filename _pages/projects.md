@@ -19,4 +19,5 @@ author_profile: true
 &nbsp;&nbsp;&nbsp;&nbsp;    FM radio based on Atmega8 microcontroller with LED array screen.
 * [Nixie power supply](/projects/nixie_power_supply) \
 &nbsp;&nbsp;&nbsp;&nbsp;    Nixie power suply based on MC34063A chip.
-    
+* [ST-LINK](/projects/st_link_v2) \
+&nbsp;&nbsp;&nbsp;&nbsp;    diy version of the st-link (work in progress) 
