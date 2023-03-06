@@ -23,18 +23,34 @@ You may think that the schematics could be easily reverse engineered, but you ca
 
 ## Schematic
 The schematic and PCB were both designed using KiCAD 6.0
-![Schematic kicad](/assets/images/st_link/schematic.PNG)
+![Schematic kicad](/assets/images/st_link/schematic.png)
 
 ## PCB design
-![PCB kicad](/assets/images/st_link/pcb.PNG)
+![PCB kicad](/assets/images/st_link/pcb.png)
 
 
-![3d view](/assets/images/st_link/3dview.PNG)
+![3d view](/assets/images/st_link/3dview.png)
 
 ## Parts used
+* STM32F103C8T6 microcontroller (you can use the CBT6 for more memory)
+* TC1263 3.3V linear regulator
+* IDC connector
+* pin header for programming
+* USB B connector
+* 2x 0805 SMD LED
+* 2x 220Ohm resistor
+* 2x 100Ohm resistor
+* 1MOhm resistor
+* 3x 10kOhm resistor
+* 2x 100kOhm resistor
+* 2x 4.7kOhm resistor
+* 1.5kOhm resistor
+* 36kOhm resistor
+* 470pF ceramic capacitor
+* 1uF electrolytic capacitor
+* 4x 100nF ceramic capacitor
+* 2x 20pF ceramic capacitor
 
-
-## Assembled project
 
 
 # Author
