@@ -67,7 +67,135 @@ J3 connector pinout:
 
 
 ## Atmega8 code
-(work in progress...)
+The code is split into several files, you can find them all on my github. 
+* encoder.c - containing functions for interfacing with the rotary encoder
+* i2c_lib.c - bit banging i2c library
+* led_screen.c - functions for interfacing with led driver
+* tea5767.c - functions for the TEA5767 FM radio module
+* main.c - main program
+
+Main function for the tea5767 is the send_freq function that tells the module to set a certain frequency:
+
+```c
+void send_freq()
+{
+	unsigned char frequencyH;
+	unsigned char frequencyL;
+	unsigned int frequencyB;
+
+	frequencyB = 4 * (frequency * 1000000 + 225000) / 32768;
+	frequencyH = frequencyB >> 8;
+	frequencyL = frequencyB & 0xFF;
+
+    //data transmition 
+    I2C_Start();
+	I2C_Write(TEA5767_ADDRESS_W);
+	I2C_Write(frequencyH);
+	I2C_Write(frequencyL);
+	I2C_Write(0xB0);
+	I2C_Write(0x10);
+	I2C_Write(0x00);
+    I2C_Stop();
+
+    _delay_ms(10);
+}
+```
+
+and the search function:
+
+```c
+void search(uint8_t direction)
+{
+	unsigned char frequencyH;
+	unsigned char frequencyL;
+	unsigned int frequencyB;
+    double temp = 88.0;
+
+    if(direction == 1)
+    {
+        temp = frequency + 0.1; 
+    }
+    else
+    {
+        temp = frequency - 0.1; 
+    }
+
+	frequencyB = 4 * (temp * 1000000 + 225000) / 32768;
+	frequencyH = frequencyB >> 8;
+	frequencyL = frequencyB & 0xFF;
+
+    I2C_Start();
+	I2C_Write(TEA5767_ADDRESS_W); //send address for writing
+	I2C_Write(frequencyH |= 0b01000000); //search mode
+	I2C_Write(frequencyL);
+    if(direction == 1)
+    {
+        I2C_Write(0b11010000); //search up with mid adc 
+    }
+    else
+    {
+        I2C_Write(0b01010000); //search down with mid adc
+    }
+	I2C_Write(0x10);
+	I2C_Write(0x00);
+
+    I2C_Stop();
+
+    _delay_ms(10);
+}
+```
+
+You can find what the specific bytes being sent to the module mean in its datasheet.
+
+
+In the main program loop we check the encoder status:
+
+```c
+if(val != val_tmp)
+{
+    if( (val == 3 && val_tmp == 1) || (val == 0 && val_tmp == 2) )
+    {
+        if(frequency < 108.0)
+        {
+            frequency += 1.0;
+            send_freq(); 
+            display(frequency); //display the current frequency
+            search(1); //search up from the set freq
+        }
+    }
+    else if( (val == 2 && val_tmp == 0) || (val == 1 && val_tmp == 3) )
+    {
+        if(frequency > 88.0)
+        {
+            frequency -= 1.0;
+            send_freq();
+            display(frequency); //display the current frequency
+            search(0); //search down from the set freq
+        }
+    }
+}
+```
+and change the frequency by 1Hz, then search up from that frequency to fine tune the radio automatically.
+
+In addition to that there are also button inputs:
+
+```c
+if(bit_is_clear(button_1_port, button_1_pin)) 
+{
+    _delay_ms(15); //debounce
+    if(bit_is_clear(button_1_port, button_1_pin))
+    {
+        search(1);
+        _delay_ms(500);
+        read_freq();
+        display(frequency); //display the current frequency
+    }
+}
+```
+
+after pressing the button, the module starts an up search from the current frequency. 
+Same aplies to the search down.
+You can also change the frequency to one from the predefined tabel by pressing button number 4 or 5.
 
 ## Parts used
 As it was just a revision of an older schematic, I did not bother to try and redesign it with newer uC etc. I just used the parts from the previous version (soldered onto a prototype board) or those I had lying around. 
