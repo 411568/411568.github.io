@@ -20,4 +20,4 @@ author_profile: true
 * [Nixie power supply](/projects/nixie_power_supply) \
 &nbsp;&nbsp;&nbsp;&nbsp;    Nixie power suply based on MC34063A chip.
 * [ST-LINK](/projects/st_link_v2) \
-&nbsp;&nbsp;&nbsp;&nbsp;    diy version of the st-link (work in progress) 
+&nbsp;&nbsp;&nbsp;&nbsp;    diy version of the st-link
