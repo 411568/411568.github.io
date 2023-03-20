@@ -51,6 +51,8 @@ The schematic and PCB were both designed using KiCAD 6.0
 * 4x 100nF ceramic capacitor
 * 2x 20pF ceramic capacitor
 
+## Assembled project
+![st link photo](/assets/images/st_link/assembled.jpg)
 
 
 # Author
