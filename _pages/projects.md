@@ -21,3 +21,5 @@ author_profile: true
 &nbsp;&nbsp;&nbsp;&nbsp;    Nixie power suply based on MC34063A chip.
 * [ST-LINK](/projects/st_link_v2) \
 &nbsp;&nbsp;&nbsp;&nbsp;    diy version of the st-link
+* [LM709](/projects/lm709) \
+&nbsp;&nbsp;&nbsp;&nbsp;    LM709 built using discrete components
