@@ -28,7 +28,9 @@ In here you can see the results of testing the converter for 4 different input v
 and current ranging from 0.1 to 1.1A
 
 ![table1](/assets/images/dc_converter_test/AP63203/table1.PNG)
+
 ![table2](/assets/images/dc_converter_test/AP63203/table1.PNG)
+
 ![eff](/assets/images/dc_converter_test/AP63203/efficiency.PNG)
 
 As you can see, the calculated efficiency is well above 90% which can mean two things: 
