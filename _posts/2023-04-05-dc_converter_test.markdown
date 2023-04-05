@@ -24,7 +24,16 @@ For my tests I used a lab power supply, with 10mA current resolution and a const
 
 
 # AD63203 test
+In here you can see the results of testing the converter for 4 different input voltages: 5, 7.5, 10, 12V
+and current ranging from 0.1 to 1.1A
 
+![table1](/assets/images/dc_converter_test/AP63203/table1.PNG)
+![table2](/assets/images/dc_converter_test/AP63203/table1.PNG)
+![eff](/assets/images/dc_converter_test/AP63203/efficiency.PNG)
+
+As you can see, the calculated efficiency is well above 90% which can mean two things: 
+* the AP63203 is a great ic with high efficiency and great output capabilities
+* my test equipment is not that accurate (most probable for low currents)
 
 # Test board files
 You can find the KiCAD files for the test board on my github:
