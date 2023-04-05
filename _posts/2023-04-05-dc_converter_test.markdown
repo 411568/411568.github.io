@@ -3,7 +3,7 @@ title:  "DC/DC converters testing"
 search: true
 categories: 
   - Jekyll
-last_modified_at: 2023-04-051T08:06:00-05:00
+last_modified_at: 2023-04-05T08:06:00-05:00
 ---
 
 
