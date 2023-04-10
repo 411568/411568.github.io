@@ -23,3 +23,5 @@ author_profile: true
 &nbsp;&nbsp;&nbsp;&nbsp;    diy version of the st-link
 * [LM709](/projects/lm709) \
 &nbsp;&nbsp;&nbsp;&nbsp;    LM709 built using discrete components
+* [LED lamp](/projects/led_lamp) \
+&nbsp;&nbsp;&nbsp;&nbsp;    USB powered small LED lamp

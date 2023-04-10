@@ -24,10 +24,11 @@ It might be different for your LEDs though, so please check that.
 
 # PCB design
 The PCB is a single layer design, because I wanted to make it at home. I used an FR-4 board and etched it using B327 after doing the thermal transfer. 
+
 ![PCB](/assets/images/led_lamp/pcb.PNG)
 
 
-![3d view](/assets/images/lm709/3dview.PNG)
+![3d view](/assets/images/led_lamp/3dview.PNG)
 
 # 3d CASE
 The 3d model for the case was designed with Autodesk Fusion 360. It consists of the bottom case and top cover with empty space for a plexi panel. They are fastened together using M3 screws.
