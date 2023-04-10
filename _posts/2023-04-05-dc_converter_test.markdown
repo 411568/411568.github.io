@@ -22,6 +22,18 @@ for microcontrollers etc, when the LDO would be wasting too much power and you s
 ## Test equipment
 For my tests I used a lab power supply, with 10mA current resolution and a constant current load with 1mA, 10mV accuracy. 
 
+# MP8862 test
+I tested the MP8862 with two different input voltages: 7V and 12V because those are the lowest and highest voltages I have in the design in which I plan on using it. 
+The output current was in the range from 0.25A to 1.25A.
+
+![table1](/assets/images/dc_converter_test/MP8862/table1.PNG)
+
+![table2](/assets/images/dc_converter_test/MP8862/table1.PNG)
+
+![eff1](/assets/images/dc_converter_test/MP8862/plot1.PNG)
+
+![eff2](/assets/images/dc_converter_test/MP8862/plot2.PNG)
+
 
 # AD63203 test
 In here you can see the results of testing the converter for 4 different input voltages: 5, 7.5, 10, 12V
@@ -38,5 +50,5 @@ As you can see, the calculated efficiency is well above 90% which can mean two t
 * my test equipment is not that accurate (most probable for low currents)
 
 # Test board files
-You can find the KiCAD files for the test board on my github:
+You can find the KiCAD files for the test board on my github, as well as the Arduino code and tables with test results:
 [github link](https://github.com/411568/MP28167-MP8862_test_board)
