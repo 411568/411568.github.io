@@ -26,7 +26,7 @@ For my tests I used a lab power supply, with 10mA current resolution and a const
 ## Arduino code 
 In order to change the output voltage of the MP8862 converter you have to write a 12-bit value to two registers of the iC via I2C. For that purpose I used an Arduino Uno with the code below:
 
-```C
+```c
 void setup() 
 {
   Wire.begin();
