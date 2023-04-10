@@ -23,6 +23,60 @@ for microcontrollers etc, when the LDO would be wasting too much power and you s
 For my tests I used a lab power supply, with 10mA current resolution and a constant current load with 1mA, 10mV accuracy. 
 
 # MP8862 test
+## Arduino code 
+In order to change the output voltage of the MP8862 converter you have to write a 12-bit value to two registers of the iC via I2C. For that purpose I used an Arduino Uno with the code below:
+
+```C
+void setup() 
+{
+  Wire.begin();
+  Serial.begin(9600);
+}
+
+void loop() 
+{
+  if(Serial.available())
+  {
+    String input;
+    input = Serial.readStringUntil('\n'); //get data from the serial port
+    int voltage_set = input.toInt();
+
+    Serial.println(voltage_set);
+
+    voltage_set = voltage_set * 100; //1V = 100 * 10mV
+
+    uint8_t voltage_lower = voltage_set & 0b00000111; //last 3 bits
+    uint8_t voltage_higher = (voltage_set >> 3) & 0xFF; //first 8 bits
+
+    Serial.println(voltage_lower);
+    Serial.println(voltage_higher);
+
+    Wire.beginTransmission(107); // transmit to device addr
+    Wire.write(byte(0x00));        //register for setting the voltage
+    Wire.write(byte(voltage_lower));              // voltage  (lower 3 bits of 11)
+    Wire.endTransmission();    // stop transmitting
+  
+    delay(50);
+
+    Wire.beginTransmission(107); // transmit to device addr
+    Wire.write(byte(0x01));        //register for setting the voltage
+    Wire.write(byte(voltage_higher));              // voltage  (highest 8 bits of 11)
+    Wire.endTransmission();    // stop transmitting
+  
+    delay(50);
+
+    Wire.beginTransmission(107); // transmit to device addr
+    Wire.write(byte(0x02));        //register for writing the output GO bit
+    Wire.write(byte(0x01));              // turn on
+    Wire.endTransmission();    // stop transmitting
+  }
+}
+
+```
+
+First, you setup the I2C connection and serial (USB). Then the program waits in the loop for user input through the serial terminal. In there you can put the desired output voltage and confirm with enter. After receiving the voltage it gets translated into the seperate bytes for two registers. After that, we write those two values to the I2C bus following the frame format from the MP8862 datasheet and go back to reading the input.
+
+## Test results
 I tested the MP8862 with two different input voltages: 7V and 12V because those are the lowest and highest voltages I have in the design in which I plan on using it. 
 The output current was in the range from 0.25A to 1.25A.
 
