@@ -89,6 +89,35 @@ The output current was in the range from 0.25A to 1.25A.
 ![eff2](/assets/images/dc_converter_test/MP8862/plot2.PNG)
 
 
+
+# MP8862 test
+## Arduino code 
+The only differences in the code are:
+* different I2C address: 
+
+```c
+	Wire.beginTransmission(96); // transmit to device addr
+```
+
+* different way of calculating the output voltage:
+
+```c
+	voltage_set = voltage_set * 800 / (1 + 430000/53600); //430k and 53.6k resistors for feedback
+```
+
+## Test results
+![table1](/assets/images/dc_converter_test/MP28167/table1.PNG)
+
+![table2](/assets/images/dc_converter_test/MP28167/table1.PNG)
+
+![eff1](/assets/images/dc_converter_test/MP28167/plot1.PNG)
+
+![eff2](/assets/images/dc_converter_test/MP28167/plot2.PNG)
+
+The results were very close to the MP8862, which is to be expected as both of them probably use the same internal circuitry. The only difference is the way we can set the output voltage, with MP28167 giving us the possibility to manipulate the reference voltage level.
+Once again the converter seems to work much better as a boost converter than a step-down. 
+
+
 # AD63203 test
 In here you can see the results of testing the converter for 4 different input voltages: 5, 7.5, 10, 12V
 and current ranging from 0.1 to 1.1A
