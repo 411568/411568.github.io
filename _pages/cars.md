@@ -8,10 +8,13 @@ header:
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   overlay_image: /assets/images/projects_header.jpeg
 #excerpt: >
-#  Car tutorials <br />
+#  My personal projects<br />
 author_profile: true
 ---
 
 
 
 # Car tutorials
+* [Spark plugs](/car_tutorials/spark_plugs) \
+&nbsp;&nbsp;&nbsp;&nbsp;    How to replace spark plugs (AR 147 Twin Spark)
+
