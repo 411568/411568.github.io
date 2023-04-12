@@ -1,7 +1,9 @@
 # main links
 main:
   - title: "Projects"
-    url: /projects/ 
+    url: /projects/
+  - title: Cars"
+    url: /cars/  
   - title: "Blog"
     url: /blog/ 
       #@  - title: "About me"

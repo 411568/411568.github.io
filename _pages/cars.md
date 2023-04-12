@@ -8,7 +8,7 @@ header:
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   overlay_image: /assets/images/projects_header.jpeg
 #excerpt: >
-#  My personal projects<br />
+#  Car tutorials <br />
 author_profile: true
 ---
 
