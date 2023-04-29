@@ -1,0 +1,28 @@
+---
+title:  "EBEC 2023"
+search: true
+categories: 
+  - Jekyll
+last_modified_at: 2023-04-26T08:06:00-05:00
+---
+
+
+![Our team](/assets/images/ebec_main_image.jpg)
+
+# EBEC engineering competition
+
+On the day of 26.04. our team: Aleksandra Gaweł, Jakub Kłoczko, Kacper Filipek and me, participated in the local final of the EBEC engineering contest in the category of innovative design. We got here as one of the 8 best teams at our university - AGH university of science and technology. 
+
+# Our task
+We were given 5 hours to design a prototype and give a presentation about our idea. This time it was a machine for pulling a thin tube made out of foam with aluminum foil wrapped around it. Our idea was to use GeckSkin, which is a super grippy material that does not require much pressure acting on the tube, meaning we won't damage or bend it. One of the requirements was the constant tube speed of 1m/s and the pulling force in the range of 14-20Nm. Below you can see a render of the design we came up with: 
+
+![Render](/assets/images/ebec_render_1.PNG)
+
+
+# Project files
+You can check out my 3d models made in Fusion360 under the [link](https://gmail302895.autodesk360.com/g/shares/SH512d4QTec90decfa6ea0548ff2dd54b0c7).
+
+
+In here you can also read our [project report](https://drive.google.com/file/d/1catzuWGfGzA6fLQcf-V2HrsYpCAqBeDW/view?usp=sharing), which contains all the technical details.
+
+
