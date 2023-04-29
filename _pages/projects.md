@@ -25,3 +25,6 @@ author_profile: true
 &nbsp;&nbsp;&nbsp;&nbsp;    LM709 built using discrete components
 * [LED lamp](/projects/led_lamp) \
 &nbsp;&nbsp;&nbsp;&nbsp;    USB powered small LED lamp
+* [Christmas tree](/projects/christmas tree) \
+&nbsp;&nbsp;&nbsp;&nbsp;    Tiny PCB christmas tree
+
