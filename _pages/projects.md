@@ -12,7 +12,7 @@ header:
 author_profile: true
 ---
 
-dasdsadad
+
 
 ## List of projects
 * [FM radio](/projects/atmega_fm_radio) \
@@ -27,4 +27,5 @@ dasdsadad
 &nbsp;&nbsp;&nbsp;&nbsp;    USB powered small LED lamp
 * [Christmas tree](/projects/christmas_tree) \
 &nbsp;&nbsp;&nbsp;&nbsp;    Tiny PCB christmas tree
-
+* [Weather station](/projects/esp32_weather_station) \
+&nbsp;&nbsp;&nbsp;&nbsp;    ESP32 based weather station
