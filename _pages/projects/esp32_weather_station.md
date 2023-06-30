@@ -29,11 +29,10 @@ The electronics design is pretty simple, consisting mostly of ready to use modul
 You can check out the detailed schematics on my github repository.
 
 ## Schematics
-![schematic](/assets/images/esp32_weather_station/schematic_1.png)
+![schematic](/assets/images/esp32_weather_station/schematic_1.PNG)
 
 ## PCB design
-![PCB](/assets/images/esp32_weather_station/pcb_1.png)
-
+![PCB](/assets/images/esp32_weather_station/pcb_1.PNG)
 # ESP32 code
 All of the ESP32 code was written in Arduino IDE. All of the code is executed in the "setup" section.
 At first, the microcontroller connects with all the sensors and start gathering the data.
@@ -70,6 +69,8 @@ In the bottom-right corner you can choose the date range: all, last month, last 
 turns on the SARIMA forecasting feature. It's using the statsmodel library with it's auto arima function that automatically finds the optimal parameters for the 
 statistical model. The forecast is set to take into account the average values for every day and make predictions for the next 10 days (1 for each day). Due to the current lack of consistent data I can't 
 guarantee it will work correctly and I might make some adjustments in the future.
+
+If you want to learn more about the SARIMA model I suggest you check out this [YT channel](https://www.youtube.com/@AricLaBarr).
 
 # Author
 Krzysztof Sikora
