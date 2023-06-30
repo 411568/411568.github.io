@@ -21,6 +21,9 @@ All of that is powered by a single li-ion 18650 battery, charged with a 2W solar
 
 The ESP is sending data to the [Thingspeak](https://thingspeak.com) server. We can visualize them using the Python app with PyQT graphs that I also wrote for this project.
 
+The enclousure that you see below was made from plywood cut on a CNC machine. I also placed a piece of plexiglass in front of the solar panel and light sensor to protect them a bit from rain etc.
+
+
 ![station picture](/assets/images/esp32_weather_station/picture_1.jpg)
 
 
@@ -60,6 +63,12 @@ After it's done that, it goes to sleep for a specified period of time to save ba
   esp_deep_sleep_start();
  ```
 
+# Diy anemometer
+As the commercially available anemometers are pretty big and expensive I decided to go for a small 3d printed version.
+![anemometer](/assets/images/esp32_weather_station/anemometer.PNG)
+
+To read the wind speed I use a simple digital hall sensor reading the changing magnetic field from the rotating magnes placed on the anemometer shaft. 
+Knowing how many times the magnetic field changed in a period of time we calculate the RPM and from that, the wind speed.
 
 # Python app
 ![GUI view](/assets/images/esp32_weather_station/gui_view.png)
